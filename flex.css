@@ -1,0 +1,70 @@
+
+body {
+    padding: 2em;
+}
+
+.float{
+    float:right;
+}
+.flex{
+    display: flex;
+    flex-direction: row;
+    flex: wrap-wrap;
+}
+
+div{
+    border: 2px dotted pink;
+    padding: 20px;
+    background-color: lightgray;
+}
+
+.table1{
+    
+    display: table;
+    background-color: grey;
+}
+.table1 > div { display: table-row;}
+.table1 > div > div{
+    display: table-cell;
+    background-color: white;
+    
+}
+
+.wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    text-align: center;
+}
+.wrapper > * {
+    padding: 10px;
+    flex: 1 100%;
+}
+
+.header {
+    background: darkolivegreen;
+}
+
+.footer {
+    background: lightseagreen;
+    order: 4;
+}
+
+.main {
+    flex: 3 0px;
+    background: mediumseagreen;
+    order:2;
+    text-align: center;
+}
+
+.aside{
+    flex: 1;
+    background: seagreen;
+    order: 1;
+
+}
+
+.nav{
+    background: slategrey;
+    order: 3;
+    flex: 1;
+}
